@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "tcss",
+      "camelcase": "Tcss",
+      "title": "Tcss",
+      "scope": "source.tcss",
+      "file-types": [
+        "tcss"
+      ],
+      "injection-regex": "^tcss$",
+      "class-name": "TreeSitterTcss"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Tree sitter grammar for textual's tcss",
+    "authors": [
+      {
+        "name": "Murli Tawari",
+        "email": "kraanzu@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/kraanzu/tree-sitter-tcss"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
