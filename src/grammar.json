@@ -296,11 +296,11 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "number"
+                "name": "value_number"
               },
               {
                 "type": "SYMBOL",
-                "name": "regular_value"
+                "name": "value_string"
               },
               {
                 "type": "SYMBOL",
@@ -343,7 +343,7 @@
         ]
       }
     },
-    "number": {
+    "value_number": {
       "type": "TOKEN",
       "content": {
         "type": "SEQ",
@@ -388,7 +388,7 @@
         ]
       }
     },
-    "regular_value": {
+    "value_string": {
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
@@ -430,7 +430,7 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "number"
+                "name": "value_number"
               },
               {
                 "type": "STRING",

@@ -44,8 +44,8 @@ module.exports = grammar({
       seq(
         repeat1(
           choice(
-            $.number,
-            $.regular_value,
+            $.value_number,
+            $.value_string,
             $.variable_reference,
             $.function_call,
           ),
@@ -54,7 +54,7 @@ module.exports = grammar({
       ),
     important: (_) => token(seq("!", "important")),
 
-    number: ($) =>
+    value_number: ($) =>
       token(
         seq(
           optional(/[+-]/),
@@ -68,13 +68,13 @@ module.exports = grammar({
         ),
       ),
 
-    regular_value: ($) => token(/[a-zA-Z_-][a-zA-Z_-]*/),
+    value_string: ($) => token(/[a-zA-Z_-][a-zA-Z_-]*/),
 
     function_call: ($) =>
       seq(
         choice("rgb", "rgba", "hsl", "hsla"),
         "(",
-        repeat1(choice($.number, ",")),
+        repeat1(choice($.value_number, ",")),
         ")",
       ),
     variable: ($) => seq("$", /[a-zA-Z_][a-zA-Z0-9_-]*/),

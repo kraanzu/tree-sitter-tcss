@@ -37,7 +37,7 @@
       "required": false,
       "types": [
         {
-          "type": "number",
+          "type": "value_number",
           "named": true
         }
       ]
@@ -186,11 +186,11 @@
           "named": true
         },
         {
-          "type": "number",
+          "type": "value_number",
           "named": true
         },
         {
-          "type": "regular_value",
+          "type": "value_string",
           "named": true
         },
         {
@@ -300,7 +300,7 @@
     "named": true
   },
   {
-    "type": "number",
+    "type": "value_number",
     "named": true
   },
   {
@@ -312,7 +312,7 @@
     "named": true
   },
   {
-    "type": "regular_value",
+    "type": "value_string",
     "named": true
   },
   {

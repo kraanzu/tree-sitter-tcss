@@ -40,8 +40,8 @@ enum ts_symbol_identifiers {
   sym_parent_reference = 18,
   sym_property_name = 19,
   sym_important = 20,
-  sym_number = 21,
-  sym_regular_value = 22,
+  sym_value_number = 21,
+  sym_value_string = 22,
   anon_sym_rgb = 23,
   anon_sym_rgba = 24,
   anon_sym_hsl = 25,
@@ -95,8 +95,8 @@ static const char * const ts_symbol_names[] = {
   [sym_parent_reference] = "parent_reference",
   [sym_property_name] = "property_name",
   [sym_important] = "important",
-  [sym_number] = "number",
-  [sym_regular_value] = "regular_value",
+  [sym_value_number] = "value_number",
+  [sym_value_string] = "value_string",
   [anon_sym_rgb] = "rgb",
   [anon_sym_rgba] = "rgba",
   [anon_sym_hsl] = "hsl",
@@ -150,8 +150,8 @@ static const TSSymbol ts_symbol_map[] = {
   [sym_parent_reference] = sym_parent_reference,
   [sym_property_name] = sym_property_name,
   [sym_important] = sym_important,
-  [sym_number] = sym_number,
-  [sym_regular_value] = sym_regular_value,
+  [sym_value_number] = sym_value_number,
+  [sym_value_string] = sym_value_string,
   [anon_sym_rgb] = anon_sym_rgb,
   [anon_sym_rgba] = anon_sym_rgba,
   [anon_sym_hsl] = anon_sym_hsl,
@@ -268,11 +268,11 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = true,
     .named = true,
   },
-  [sym_number] = {
+  [sym_value_number] = {
     .visible = true,
     .named = true,
   },
-  [sym_regular_value] = {
+  [sym_value_string] = {
     .visible = true,
     .named = true,
   },
@@ -903,21 +903,21 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       ACCEPT_TOKEN(sym_important);
       END_STATE();
     case 73:
-      ACCEPT_TOKEN(sym_number);
+      ACCEPT_TOKEN(sym_value_number);
       END_STATE();
     case 74:
-      ACCEPT_TOKEN(sym_number);
+      ACCEPT_TOKEN(sym_value_number);
       if (lookahead == '%') ADVANCE(73);
       if (lookahead == '.') ADVANCE(28);
       if (('0' <= lookahead && lookahead <= '9')) ADVANCE(74);
       END_STATE();
     case 75:
-      ACCEPT_TOKEN(sym_number);
+      ACCEPT_TOKEN(sym_value_number);
       if (lookahead == '%') ADVANCE(73);
       if (('0' <= lookahead && lookahead <= '9')) ADVANCE(75);
       END_STATE();
     case 76:
-      ACCEPT_TOKEN(sym_regular_value);
+      ACCEPT_TOKEN(sym_value_string);
       if (lookahead == '.') ADVANCE(28);
       if (('0' <= lookahead && lookahead <= '9')) ADVANCE(74);
       if (lookahead == '-' ||
@@ -926,7 +926,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           ('a' <= lookahead && lookahead <= 'z')) ADVANCE(81);
       END_STATE();
     case 77:
-      ACCEPT_TOKEN(sym_regular_value);
+      ACCEPT_TOKEN(sym_value_string);
       if (lookahead == 'b') ADVANCE(83);
       if (lookahead == '-' ||
           ('A' <= lookahead && lookahead <= 'Z') ||
@@ -934,7 +934,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           ('a' <= lookahead && lookahead <= 'z')) ADVANCE(81);
       END_STATE();
     case 78:
-      ACCEPT_TOKEN(sym_regular_value);
+      ACCEPT_TOKEN(sym_value_string);
       if (lookahead == 'g') ADVANCE(77);
       if (lookahead == '-' ||
           ('A' <= lookahead && lookahead <= 'Z') ||
@@ -942,7 +942,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           ('a' <= lookahead && lookahead <= 'z')) ADVANCE(81);
       END_STATE();
     case 79:
-      ACCEPT_TOKEN(sym_regular_value);
+      ACCEPT_TOKEN(sym_value_string);
       if (lookahead == 'l') ADVANCE(87);
       if (lookahead == '-' ||
           ('A' <= lookahead && lookahead <= 'Z') ||
@@ -950,7 +950,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           ('a' <= lookahead && lookahead <= 'z')) ADVANCE(81);
       END_STATE();
     case 80:
-      ACCEPT_TOKEN(sym_regular_value);
+      ACCEPT_TOKEN(sym_value_string);
       if (lookahead == 's') ADVANCE(79);
       if (lookahead == '-' ||
           ('A' <= lookahead && lookahead <= 'Z') ||
@@ -958,7 +958,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           ('a' <= lookahead && lookahead <= 'z')) ADVANCE(81);
       END_STATE();
     case 81:
-      ACCEPT_TOKEN(sym_regular_value);
+      ACCEPT_TOKEN(sym_value_string);
       if (lookahead == '-' ||
           ('A' <= lookahead && lookahead <= 'Z') ||
           lookahead == '_' ||
@@ -1135,8 +1135,8 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
     [sym_parent_reference] = ACTIONS(1),
     [sym_property_name] = ACTIONS(1),
     [sym_important] = ACTIONS(1),
-    [sym_number] = ACTIONS(1),
-    [sym_regular_value] = ACTIONS(1),
+    [sym_value_number] = ACTIONS(1),
+    [sym_value_string] = ACTIONS(1),
     [anon_sym_rgb] = ACTIONS(1),
     [anon_sym_rgba] = ACTIONS(1),
     [anon_sym_hsl] = ACTIONS(1),
@@ -1272,9 +1272,9 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(38), 1,
       sym_important,
     ACTIONS(40), 1,
-      sym_number,
+      sym_value_number,
     ACTIONS(42), 1,
-      sym_regular_value,
+      sym_value_string,
     STATE(5), 1,
       sym_comment,
     STATE(7), 1,
@@ -1324,9 +1324,9 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(5), 1,
       anon_sym_SLASH_STAR,
     ACTIONS(50), 1,
-      sym_number,
+      sym_value_number,
     ACTIONS(53), 1,
-      sym_regular_value,
+      sym_value_string,
     ACTIONS(59), 1,
       anon_sym_DOLLAR,
     STATE(15), 1,
@@ -1439,9 +1439,9 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(13), 1,
       anon_sym_DOLLAR,
     ACTIONS(40), 1,
-      sym_number,
+      sym_value_number,
     ACTIONS(42), 1,
-      sym_regular_value,
+      sym_value_string,
     STATE(5), 1,
       aux_sym_value_list_repeat1,
     STATE(11), 1,
@@ -1466,9 +1466,9 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(13), 1,
       anon_sym_DOLLAR,
     ACTIONS(40), 1,
-      sym_number,
+      sym_value_number,
     ACTIONS(42), 1,
-      sym_regular_value,
+      sym_value_string,
     STATE(5), 1,
       aux_sym_value_list_repeat1,
     STATE(12), 1,
@@ -1496,10 +1496,10 @@ static const uint16_t ts_small_parse_table[] = {
       anon_sym_COLON,
       anon_sym_SEMI,
       sym_important,
-      sym_number,
+      sym_value_number,
       anon_sym_DOLLAR,
     ACTIONS(85), 5,
-      sym_regular_value,
+      sym_value_string,
       anon_sym_rgb,
       anon_sym_rgba,
       anon_sym_hsl,
@@ -1514,10 +1514,10 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(87), 4,
       anon_sym_SEMI,
       sym_important,
-      sym_number,
+      sym_value_number,
       anon_sym_DOLLAR,
     ACTIONS(89), 5,
-      sym_regular_value,
+      sym_value_string,
       anon_sym_rgb,
       anon_sym_rgba,
       anon_sym_hsl,
@@ -1532,10 +1532,10 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(91), 4,
       anon_sym_SEMI,
       sym_important,
-      sym_number,
+      sym_value_number,
       anon_sym_DOLLAR,
     ACTIONS(93), 5,
-      sym_regular_value,
+      sym_value_string,
       anon_sym_rgb,
       anon_sym_rgba,
       anon_sym_hsl,
@@ -1550,10 +1550,10 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(95), 4,
       anon_sym_SEMI,
       sym_important,
-      sym_number,
+      sym_value_number,
       anon_sym_DOLLAR,
     ACTIONS(97), 5,
-      sym_regular_value,
+      sym_value_string,
       anon_sym_rgb,
       anon_sym_rgba,
       anon_sym_hsl,
@@ -1867,7 +1867,7 @@ static const uint16_t ts_small_parse_table[] = {
       anon_sym_RPAREN,
     ACTIONS(157), 2,
       anon_sym_COMMA,
-      sym_number,
+      sym_value_number,
     STATE(37), 2,
       sym_comment,
       aux_sym_function_call_repeat1,
@@ -1884,7 +1884,7 @@ static const uint16_t ts_small_parse_table[] = {
       sym_comment,
     ACTIONS(162), 2,
       anon_sym_COMMA,
-      sym_number,
+      sym_value_number,
   [979] = 5,
     ACTIONS(3), 1,
       anon_sym_POUND,
@@ -1947,7 +1947,7 @@ static const uint16_t ts_small_parse_table[] = {
       sym_comment,
     ACTIONS(162), 2,
       anon_sym_COMMA,
-      sym_number,
+      sym_value_number,
   [1069] = 4,
     ACTIONS(3), 1,
       anon_sym_POUND,
@@ -1957,7 +1957,7 @@ static const uint16_t ts_small_parse_table[] = {
       sym_comment,
     ACTIONS(182), 3,
       anon_sym_COMMA,
-      sym_number,
+      sym_value_number,
       anon_sym_RPAREN,
   [1084] = 4,
     ACTIONS(3), 1,

@@ -15,7 +15,7 @@
 (important) @keyword
 
 ;; Values
-(value_number) @number
+(value_value_number) @value_number
 (value_regular) @string
 (value_list) @string
 
