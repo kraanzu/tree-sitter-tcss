@@ -324,11 +324,8 @@
       ]
     },
     "important": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "?important"
-      }
+      "type": "STRING",
+      "value": "!important"
     },
     "value": {
       "type": "TOKEN",

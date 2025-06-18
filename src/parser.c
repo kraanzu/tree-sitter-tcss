@@ -473,6 +473,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
     case 0:
       if (eof) ADVANCE(35);
       ADVANCE_MAP(
+        '!', 22,
         '#', 65,
         '$', 87,
         '&', 68,
@@ -485,7 +486,6 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
         ':', 49,
         ';', 50,
         '>', 54,
-        '?', 22,
       );
       if (lookahead == '\\') SKIP(31);
       if (lookahead == '_') ADVANCE(55);
@@ -546,12 +546,12 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead != 0) ADVANCE(19);
       END_STATE();
     case 13:
+      if (lookahead == '!') ADVANCE(22);
       if (lookahead == '#') ADVANCE(71);
       if (lookahead == '$') ADVANCE(87);
       if (lookahead == '/') ADVANCE(18);
       if (lookahead == ':') ADVANCE(49);
       if (lookahead == ';') ADVANCE(50);
-      if (lookahead == '?') ADVANCE(22);
       if (lookahead == '\\') SKIP(2);
       if (lookahead == 'h') ADVANCE(75);
       if (lookahead == 'r') ADVANCE(73);

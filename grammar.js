@@ -57,7 +57,7 @@ module.exports = grammar({
         optional($.important),
       ),
 
-    important: () => token("!important"),
+    important: () => "!important",
 
     value: () => token(/[a-zA-Z0-9_%#\.-]+/),
 
