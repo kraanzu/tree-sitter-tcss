@@ -6,6 +6,7 @@
       "camelcase": "Tcss",
       "title": "Tcss",
       "scope": "source.tcss",
+      "path": ".",
       "file-types": ["tcss"],
       "injection-regex": "^tcss$",
       "class-name": "TreeSitterTcss",
