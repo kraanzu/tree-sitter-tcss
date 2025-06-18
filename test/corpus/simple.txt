@@ -17,4 +17,4 @@ Button {
     (declaration
       (property_name)
       (value_list
-        (value)))))
+        (value_string)))))
