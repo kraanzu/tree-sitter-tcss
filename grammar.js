@@ -1,9 +1,6 @@
 /**
- * @file Tree sitter grammar for textual's tcss
- * @author Murli Tawari <kraanzu@gmail.com>
- * @license MIT
+ * Tree-sitter grammar for TCSS, with proper !important support
  */
-
 module.exports = grammar({
   name: "tcss",
 
@@ -32,7 +29,7 @@ module.exports = grammar({
     selector: ($) =>
       seq($.simple_selector, repeat(seq($.combinator, $.simple_selector))),
 
-    combinator: ($) => choice(">"),
+    combinator: () => ">",
 
     simple_selector: ($) =>
       seq(
@@ -45,29 +42,24 @@ module.exports = grammar({
         repeat(choice($.class_selector, $.pseudo_class_selector)),
       ),
 
-    type_selector: ($) => /[a-zA-Z_][a-zA-Z0-9_-]*/,
+    type_selector: () => /[A-Z_][a-zA-Z0-9_-]*/,
+    class_selector: () => seq(".", /[a-zA-Z_][a-zA-Z0-9_-]*/),
+    id_selector: () => seq("#", /[a-zA-Z_][a-zA-Z0-9_-]*/),
+    pseudo_class_selector: () => seq(":", /[a-z_][a-z_-]*/),
+    wildcard_selector: () => "*",
+    parent_reference: () => "&",
 
-    class_selector: ($) => seq(".", /[a-zA-Z_][a-zA-Z0-9_-]*/),
-
-    id_selector: ($) => seq("#", /[a-zA-Z_][a-zA-Z0-9_-]*/),
-
-    pseudo_class_selector: ($) => seq(":", /[a-zA-Z_][a-zA-Z0-9_-]*/),
-
-    wildcard_selector: ($) => "*",
-
-    parent_reference: ($) => "&",
-
-    property_name: ($) =>
-      token(
-        choice(
-          /[a-z][a-z0-9_-]*/, // Keep this general, TextMate narrows it further
-        ),
-      ),
+    property_name: () => token(/[a-z][a-z0-9_-]*/),
 
     value_list: ($) =>
-      repeat1(choice($.value, $.variable_reference, $.function_call)),
+      seq(
+        repeat1(choice($.value, $.variable_reference, $.function_call)),
+        optional($.important),
+      ),
 
-    value: ($) => token(/[a-zA-Z0-9_%#.-]+/),
+    important: () => token("!important"),
+
+    value: () => token(/[a-zA-Z0-9_%#\.-]+/),
 
     function_call: ($) =>
       seq(
@@ -77,8 +69,7 @@ module.exports = grammar({
         ")",
       ),
 
-    variable: ($) => seq("$", /[a-zA-Z_][a-zA-Z0-9_-]*/),
-
+    variable: () => seq("$", /[a-zA-Z_][a-zA-Z0-9_-]*/),
     variable_reference: ($) => $.variable,
   },
 });

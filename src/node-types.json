@@ -5,11 +5,6 @@
     "fields": {}
   },
   {
-    "type": "combinator",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "comment",
     "named": true,
     "fields": {}
@@ -175,11 +170,6 @@
     }
   },
   {
-    "type": "type_selector",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "value_list",
     "named": true,
     "fields": {},
@@ -189,6 +179,10 @@
       "types": [
         {
           "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "important",
           "named": true
         },
         {
@@ -286,8 +280,8 @@
     "named": false
   },
   {
-    "type": ">",
-    "named": false
+    "type": "combinator",
+    "named": true
   },
   {
     "type": "hsl",
@@ -296,6 +290,10 @@
   {
     "type": "hsla",
     "named": false
+  },
+  {
+    "type": "important",
+    "named": true
   },
   {
     "type": "parent_reference",
@@ -312,6 +310,10 @@
   {
     "type": "rgba",
     "named": false
+  },
+  {
+    "type": "type_selector",
+    "named": true
   },
   {
     "type": "value",

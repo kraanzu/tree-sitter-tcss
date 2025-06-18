@@ -183,13 +183,8 @@
       ]
     },
     "combinator": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "STRING",
-          "value": ">"
-        }
-      ]
+      "type": "STRING",
+      "value": ">"
     },
     "simple_selector": {
       "type": "SEQ",
@@ -235,7 +230,7 @@
     },
     "type_selector": {
       "type": "PATTERN",
-      "value": "[a-zA-Z_][a-zA-Z0-9_-]*"
+      "value": "[A-Z_][a-zA-Z0-9_-]*"
     },
     "class_selector": {
       "type": "SEQ",
@@ -272,7 +267,7 @@
         },
         {
           "type": "PATTERN",
-          "value": "[a-zA-Z_][a-zA-Z0-9_-]*"
+          "value": "[a-z_][a-z_-]*"
         }
       ]
     },
@@ -287,40 +282,59 @@
     "property_name": {
       "type": "TOKEN",
       "content": {
-        "type": "CHOICE",
-        "members": [
-          {
-            "type": "PATTERN",
-            "value": "[a-z][a-z0-9_-]*"
-          }
-        ]
+        "type": "PATTERN",
+        "value": "[a-z][a-z0-9_-]*"
       }
     },
     "value_list": {
-      "type": "REPEAT1",
-      "content": {
-        "type": "CHOICE",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "value"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "variable_reference"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "function_call"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT1",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "variable_reference"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "function_call"
+              }
+            ]
           }
-        ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "important"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "important": {
+      "type": "TOKEN",
+      "content": {
+        "type": "STRING",
+        "value": "?important"
       }
     },
     "value": {
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "[a-zA-Z0-9_%#.-]+"
+        "value": "[a-zA-Z0-9_%#\\.-]+"
       }
     },
     "function_call": {
