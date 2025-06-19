@@ -6,11 +6,9 @@
       "camelcase": "Tcss",
       "title": "Tcss",
       "scope": "source.tcss",
-      "path": ".",
       "file-types": ["tcss"],
       "injection-regex": "^tcss$",
-      "class-name": "TreeSitterTcss",
-      "highlights": "queries/highlights.scm"
+      "class-name": "TreeSitterTcss"
     }
   ],
   "metadata": {

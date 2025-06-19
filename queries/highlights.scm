@@ -15,8 +15,8 @@
 (important) @keyword
 
 ;; Values
-(value_value_number) @value_number
-(value_regular) @string
+(value_number) @value_number
+(value_string) @variable
 (value_list) @string
 
 ;; Variables
@@ -30,16 +30,15 @@
 
 ;; Rule blocks
 (rule_set "{" @punctuation.bracket)
-(rule_set "}") @punctuation.bracket)
+(rule_set "}" @punctuation.bracket)
 
 ;; Variable declaration
 (variable_declaration ":") @punctuation.delimiter
 (variable_declaration ";") @punctuation.delimiter
 
 ;; Commas and separators
-(selector_group "," @punctuation.delimiter)
-(value_list "," @punctuation.delimiter)
+"," @punctuation.delimiter
 
 ;; Braces and combinators
-(">" @operator)
-(";" @punctuation.delimiter)
+(combinator) @operator
+";" @punctuation.delimiter
