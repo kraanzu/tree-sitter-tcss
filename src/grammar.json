@@ -198,6 +198,10 @@
             },
             {
               "type": "SYMBOL",
+              "name": "class_selector"
+            },
+            {
+              "type": "SYMBOL",
               "name": "id_selector"
             },
             {

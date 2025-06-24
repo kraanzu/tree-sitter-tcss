@@ -27,6 +27,7 @@ module.exports = grammar({
       seq(
         choice(
           $.type_selector,
+          $.class_selector,
           $.id_selector,
           $.wildcard_selector,
           $.parent_reference,
