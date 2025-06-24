@@ -10,10 +10,7 @@ Button {
 
 (source_file
   (rule_set
-    (selector_group
-      (selector
-        (simple_selector
-          (type_selector))))
+    (selector
+      (type_selector))
     (ERROR
-      (property_name)
-    )))
+      (property_name))))

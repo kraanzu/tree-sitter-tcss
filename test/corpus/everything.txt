@@ -36,92 +36,78 @@ Button {
 }
 
 ---
-
 (source_file
-    (comment)
-    (comment)
-    (variable_declaration
+  (comment)
+  (comment)
+  (variable_declaration
     (variable)
     (value_list
-        (value_number)
-        (value_string)))
-    (variable_declaration
+      (value_number)
+      (value_string)))
+  (variable_declaration
     (variable)
     (value_list
-        (value_string)))
-    (rule_set
-    (selector_group
-        (selector
-        (simple_selector
-            (type_selector))))
+      (value_string)))
+  (rule_set
+    (selector
+      (type_selector))
     (declaration
-        (property_name)
-        (value_list
+      (property_name)
+      (value_list
         (variable_reference
-            (variable))
+          (variable))
         (value_string)))
     (declaration
-        (property_name)
-        (value_list
+      (property_name)
+      (value_list
         (value_string)))
     (declaration
-        (property_name)
-        (value_list
+      (property_name)
+      (value_list
         (variable_reference
-            (variable))
+          (variable))
         (value_string)
         (value_string)))
     (rule_set
-        (selector_group
-        (selector
-            (simple_selector
-            (parent_reference)
-            (pseudo_class_selector))))
-        (declaration
+      (selector
+        (parent_reference)
+        (pseudo_class_selector))
+      (declaration
         (property_name)
         (value_list
-            (function_call
+          (function_call
             (value_number)
             (value_number)
             (value_number)))))
     (rule_set
-        (selector_group
-        (selector
-            (simple_selector
-            (type_selector))
-            (combinator)
-            (simple_selector
-            (type_selector))))))
-    (rule_set
-    (selector_group
-        (selector
-        (simple_selector
-            (wildcard_selector))))
+      (selector
+        (type_selector)
+        (combinator)
+        (type_selector))))
+  (rule_set
+    (selector
+      (wildcard_selector))
     (declaration
-        (property_name)
-        (value_list
+      (property_name)
+      (value_list
         (function_call
-            (value_number)
-            (value_number)
-            (value_number)
-            (value_number)))))
-    (rule_set
-    (selector_group
-        (selector
-        (simple_selector
-            (id_selector)
-            (class_selector))))
+          (value_number)
+          (value_number)
+          (value_number)
+          (value_number)))))
+  (rule_set
+    (selector
+      (id_selector)
+      (class_selector))
     (declaration
-        (property_name)
-        (value_list
+      (property_name)
+      (value_list
         (value_string)))
     (rule_set
-        (selector_group
-        (selector
-            (simple_selector
-            (parent_reference)
-            (class_selector))))
-        (declaration
+      (selector
+        (parent_reference)
+        (class_selector))
+      (declaration
         (property_name)
         (value_list
-            (value_string))))))
+          (value_string))))))
