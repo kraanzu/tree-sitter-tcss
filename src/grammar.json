@@ -480,7 +480,10 @@
   "conflicts": [],
   "precedences": [],
   "externals": [],
-  "inline": [],
+  "inline": [
+    "selector_group",
+    "simple_selector"
+  ],
   "supertypes": [],
   "reserved": {}
 }

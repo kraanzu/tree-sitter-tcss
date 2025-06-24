@@ -6,6 +6,7 @@
 module.exports = grammar({
   name: "tcss",
   extras: ($) => [/\s|\\\r?\n/, $.comment],
+  inline: ($) => [$.selector_group, $.simple_selector],
   rules: {
     source_file: ($) => repeat(choice($.rule_set, $.variable_declaration)),
     comment: ($) =>
@@ -56,18 +57,7 @@ module.exports = grammar({
     important: (_) => token(seq("!", "important")),
 
     value_number: ($) =>
-      token(
-        seq(
-          optional(/[+-]/),
-          choice(
-            // Integer
-            /\d+/,
-            // Float
-            /\d*\.\d+/,
-          ),
-          optional("%"), // Support for percentage values
-        ),
-      ),
+      token(seq(optional(/[+-]/), choice(/\d+/, /\d*\.\d+/), optional("%"))),
 
     value_string: ($) => token(/[a-zA-Z_-][a-zA-Z_-]*/),
 

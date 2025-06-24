@@ -74,7 +74,7 @@
           "named": true
         },
         {
-          "type": "selector_group",
+          "type": "selector",
           "named": true
         }
       ]
@@ -89,41 +89,11 @@
       "required": true,
       "types": [
         {
-          "type": "combinator",
+          "type": "class_selector",
           "named": true
         },
         {
-          "type": "simple_selector",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "selector_group",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "selector",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "simple_selector",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "class_selector",
+          "type": "combinator",
           "named": true
         },
         {
