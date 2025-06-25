@@ -5,10 +5,11 @@
  */
 module.exports = grammar({
   name: "tcss",
-  extras: ($) => [/\s|\\\r?\n/, $.comment],
+  extras: ($) => [/\s|\\\r?\n/],
   inline: ($) => [$.selector_group, $.simple_selector],
   rules: {
-    source_file: ($) => repeat(choice($.rule_set, $.variable_declaration)),
+    source_file: ($) =>
+      repeat(choice($.rule_set, $.variable_declaration, $.comment)),
     comment: ($) =>
       choice(seq("# ", /[^\n]*/), seq("/*", /[^*]*\*+([^/*][^*]*\*+)*/, "/")),
     variable_declaration: ($) => seq($.variable, ":", $.value_list, ";"),
