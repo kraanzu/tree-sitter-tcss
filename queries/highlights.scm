@@ -10,18 +10,19 @@
 (parent_reference) @keyword
 
 ;; Properties and declarations
-(property_name) @property
+(property_name) @keyword
 (declaration ":") @punctuation.delimiter
 (important) @keyword
 
 ;; Values
-(value_number) @value_number
+(value_number) @number
 (value_string) @variable
 (value_list) @string
 
 ;; Variables
 (variable) @variable
 (variable_reference) @variable
+(variable_declaration) @constant
 
 ;; Functions and function arguments
 (function_call) @function
@@ -33,8 +34,8 @@
 (rule_set "}" @punctuation.bracket)
 
 ;; Variable declaration
-(variable_declaration ":") @punctuation.delimiter
-(variable_declaration ";") @punctuation.delimiter
+":" @punctuation.delimiter
+";" @punctuation.delimiter
 
 ;; Commas and separators
 "," @punctuation.delimiter
