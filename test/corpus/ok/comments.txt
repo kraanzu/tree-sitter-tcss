@@ -1,0 +1,25 @@
+================================================================================
+Comments
+================================================================================
+
+# This is a comment
+
+/* This is a comment */
+
+Test { # super comment
+    # this is a comment
+    /* This is a comment */
+}
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (comment)
+  (comment)
+  (rule_set
+    (selector
+      (type_selector))
+    (comment)
+    (comment)
+    (comment)))

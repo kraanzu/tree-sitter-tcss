@@ -1,0 +1,56 @@
+================================================================================
+Classes
+================================================================================
+
+.ok {
+}
+
+.one.two {
+}
+
+Test.one {
+}
+
+#someId.class {
+}
+
+.class--with-dash {
+}
+
+.multiple .classes {
+}
+
+.comma, .separated {
+}
+
+--------------------------------------------------------------------------------
+
+
+(source_file
+  (rule_set
+    (selector
+      (class_selector)))
+  (rule_set
+    (selector
+      (class_selector)
+      (class_selector)))
+  (rule_set
+    (selector
+      (type_selector)
+      (class_selector)))
+  (rule_set
+    (selector
+      (id_selector)
+      (class_selector)))
+  (rule_set
+    (selector
+      (class_selector)))
+  (rule_set
+    (selector
+      (class_selector)
+      (class_selector)))
+  (rule_set
+    (selector
+      (class_selector))
+    (selector
+      (class_selector))))

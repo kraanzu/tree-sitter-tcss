@@ -1,0 +1,42 @@
+================================================================================
+IDs
+================================================================================
+
+#test {
+}
+
+#multiple #ids {
+}
+
+#comma, #separated {
+}
+
+#test.class {
+}
+
+Test#abcd {
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (rule_set
+    (selector
+      (id_selector)))
+  (rule_set
+    (selector
+      (id_selector)
+      (id_selector)))
+  (rule_set
+    (selector
+      (id_selector))
+    (selector
+      (id_selector)))
+  (rule_set
+    (selector
+      (id_selector)
+      (class_selector)))
+  (rule_set
+    (selector
+      (type_selector)
+      (id_selector))))
