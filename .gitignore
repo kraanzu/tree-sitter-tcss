@@ -1,3 +1,5 @@
+/*.tcss
+
 # Rust artifacts
 target/
 Cargo.lock
