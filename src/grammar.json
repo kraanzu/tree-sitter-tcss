@@ -230,6 +230,10 @@
               {
                 "type": "SYMBOL",
                 "name": "pseudo_class_selector"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "id_selector"
               }
             ]
           }

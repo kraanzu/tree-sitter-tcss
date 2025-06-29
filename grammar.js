@@ -34,7 +34,9 @@ module.exports = grammar({
           $.wildcard_selector,
           $.parent_reference,
         ),
-        repeat(choice($.class_selector, $.pseudo_class_selector)),
+        repeat(
+          choice($.class_selector, $.pseudo_class_selector, $.id_selector),
+        ),
       ),
     type_selector: ($) => /[A-Z_][a-zA-Z0-9_-]*/,
     class_selector: ($) => seq(".", /[a-zA-Z_][a-zA-Z0-9_-]*/),
