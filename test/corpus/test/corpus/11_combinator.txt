@@ -1,0 +1,21 @@
+==================
+Child combinator
+==================
+
+Container > Button {
+    color: red;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)
+        (combinator)
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)))))

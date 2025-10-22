@@ -1,0 +1,55 @@
+==================
+Complex combination
+==================
+
+$accent: #3498db;
+
+Screen > .container {
+    background: $accent;
+    padding: 10 20;
+}
+
+Button:hover, Input:focus {
+    border: solid 2 blue;
+    color: white !important;
+}
+
+---
+
+(stylesheet
+  (variable_definition
+    (variable)
+    (color_value))
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)
+        (combinator)
+        (class_selector
+          (class_name))))
+    (block
+      (declaration
+        (property_name)
+        (variable))
+      (declaration
+        (property_name)
+        (numeric_value)
+        (numeric_value))))
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)
+        (pseudo_class_selector))
+      (selector
+        (widget_selector)
+        (pseudo_class_selector)))
+    (block
+      (declaration
+        (property_name)
+        (property_keyword)
+        (numeric_value)
+        (color_keyword))
+      (declaration
+        (property_name)
+        (color_keyword)
+        (important)))))

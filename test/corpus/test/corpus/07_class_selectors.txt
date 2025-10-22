@@ -1,0 +1,33 @@
+==================
+Class selectors
+==================
+
+.error {
+    color: red;
+}
+
+.warning {
+    color: yellow;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (class_selector
+          (class_name))))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword))))
+  (rule_set
+    (selectors
+      (selector
+        (class_selector
+          (class_name))))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)))))

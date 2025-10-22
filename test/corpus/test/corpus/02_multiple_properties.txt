@@ -1,0 +1,23 @@
+==================
+Multiple properties
+==================
+
+Screen {
+    background: red;
+    color: white;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword))
+      (declaration
+        (property_name)
+        (color_keyword)))))

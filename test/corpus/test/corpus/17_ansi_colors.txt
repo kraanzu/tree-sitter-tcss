@@ -1,0 +1,23 @@
+==================
+ANSI colors
+==================
+
+Terminal {
+    color: ansi_green;
+    background: ansi_black;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword))
+      (declaration
+        (property_name)
+        (color_keyword)))))

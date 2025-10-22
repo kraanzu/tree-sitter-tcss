@@ -1,0 +1,27 @@
+==================
+Property keywords
+==================
+
+Layout {
+    display: block;
+    align: center;
+    text-style: bold;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (property_keyword))
+      (declaration
+        (property_name)
+        (property_keyword))
+      (declaration
+        (property_name)
+        (property_keyword)))))

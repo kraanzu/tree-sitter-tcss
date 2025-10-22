@@ -1,0 +1,20 @@
+==================
+Important keyword
+==================
+
+Button {
+    color: red !important;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)
+        (important)))))

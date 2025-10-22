@@ -1,0 +1,23 @@
+==================
+Hex color values
+==================
+
+Panel {
+    background: #1e1e2e;
+    color: #ffffff;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_value))
+      (declaration
+        (property_name)
+        (color_value)))))

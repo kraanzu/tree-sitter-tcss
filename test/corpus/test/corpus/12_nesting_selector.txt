@@ -1,0 +1,32 @@
+==================
+Nesting selector
+==================
+
+Button {
+    color: blue;
+    
+    &:hover {
+        color: red;
+    }
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword))
+      (rule_set
+        (selectors
+          (selector
+            (nesting_selector)
+            (pseudo_class_selector)))
+        (block
+          (declaration
+            (property_name)
+            (color_keyword)))))))

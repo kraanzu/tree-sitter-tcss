@@ -1,0 +1,32 @@
+==================
+Variable definition and usage
+==================
+
+$primary: #ff0000;
+$spacing: 10;
+
+Button {
+    background: $primary;
+    padding: $spacing;
+}
+
+---
+
+(stylesheet
+  (variable_definition
+    (variable)
+    (color_value))
+  (variable_definition
+    (variable)
+    (numeric_value))
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (variable))
+      (declaration
+        (property_name)
+        (variable)))))

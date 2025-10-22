@@ -1,0 +1,22 @@
+==================
+HSL functions
+==================
+
+Panel {
+    background: hsl(120, 100%, 50%);
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (function_call
+          (numeric_value)
+          (numeric_value)
+          (numeric_value))))))

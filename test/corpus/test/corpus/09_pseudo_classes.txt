@@ -1,0 +1,34 @@
+==================
+Pseudo-classes
+==================
+
+Button:hover {
+    background: blue;
+}
+
+Input:focus {
+    border: solid green;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)
+        (pseudo_class_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword))))
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)
+        (pseudo_class_selector)))
+    (block
+      (declaration
+        (property_name)
+        (property_keyword)
+        (color_keyword)))))

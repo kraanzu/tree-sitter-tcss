@@ -1,0 +1,19 @@
+==================
+Simple rule with single property
+==================
+
+Button {
+    color: blue;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)))))

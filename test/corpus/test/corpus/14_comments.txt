@@ -1,0 +1,24 @@
+==================
+Block and line comments
+==================
+
+/* Block comment */
+# Line comment
+
+Screen {
+    background: blue;
+}
+
+---
+
+(stylesheet
+  (comment_block)
+  (comment_line)
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)))))

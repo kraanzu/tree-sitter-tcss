@@ -1,0 +1,23 @@
+==================
+Multiple selectors
+==================
+
+Button, Input, Label {
+    width: 14;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector))
+      (selector
+        (widget_selector))
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (numeric_value)))))

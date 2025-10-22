@@ -1,0 +1,20 @@
+==================
+ID selector
+==================
+
+#main-panel {
+    width: 100%;
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (id_selector
+          (id_name))))
+    (block
+      (declaration
+        (property_name)
+        (numeric_value)))))

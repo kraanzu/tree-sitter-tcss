@@ -1,0 +1,30 @@
+==================
+RGB and RGBA functions
+==================
+
+Box {
+    background: rgb(255, 0, 0);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (function_call
+          (numeric_value)
+          (numeric_value)
+          (numeric_value)))
+      (declaration
+        (property_name)
+        (function_call
+          (numeric_value)
+          (numeric_value)
+          (numeric_value)
+          (numeric_value))))))
