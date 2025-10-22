@@ -1,45 +1,51 @@
 ;; Comments
-(comment) @comment
+(comment_block) @comment.block
+(comment_line) @comment.line
 
 ;; Selectors
-(type_selector) @type
+(widget_selector) @type
 (class_selector) @class
+(class_name) @class
 (id_selector) @constant
-(pseudo_class_selector) @function
+(id_name) @constant
+(pseudo_class_selector) @attribute
 (wildcard_selector) @type
-(parent_reference) @keyword
+(nesting_selector) @keyword
 
-;; Properties and declarations
-(property_name) @keyword
-(declaration ":") @punctuation.delimiter
-(important) @keyword
+;; Combinators
+(combinator) @operator
+
+;; Properties
+(property_name) @property
 
 ;; Values
-(value_number) @number
-(value_string) @variable
-(value_list) @string
+(property_keyword) @constant.builtin
+(color_keyword) @constant.builtin.color
+(numeric_value) @number
+(color_value) @constant.builtin.color
+(plain_value) @string
+
+;; Functions
+(function_call) @function.call
+"rgb" @function.builtin
+"rgba" @function.builtin
+"hsl" @function.builtin
+"hsla" @function.builtin
 
 ;; Variables
 (variable) @variable
-(variable_reference) @variable
-(variable_declaration) @constant
+(variable_definition (variable) @variable.definition)
 
-;; Functions and function arguments
-(function_call) @function
-(function_call "(") @punctuation.bracket
-(function_call ")") @punctuation.bracket
+;; Important
+(important) @keyword
 
-;; Rule blocks
-(rule_set "{" @punctuation.bracket)
-(rule_set "}" @punctuation.bracket)
-
-;; Variable declaration
+;; Punctuation
 ":" @punctuation.delimiter
 ";" @punctuation.delimiter
-
-;; Commas and separators
-"," @punctuation.delimiter
-
-;; Braces and combinators
-(combinator) @operator
-";" @punctuation.delimiter
+"," @punctuation.separator
+"{" @punctuation.bracket
+"}" @punctuation.bracket
+"(" @punctuation.bracket
+")" @punctuation.bracket
+"." @punctuation.delimiter
+"#" @punctuation.delimiter
