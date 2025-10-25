@@ -1,4 +1,5 @@
 /*.tcss
+/.direnv/
 
 # Rust artifacts
 target/
