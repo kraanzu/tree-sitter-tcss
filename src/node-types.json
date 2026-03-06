@@ -315,6 +315,14 @@
     "named": false
   },
   {
+    "type": "absolute",
+    "named": false
+  },
+  {
+    "type": "alias",
+    "named": false
+  },
+  {
     "type": "aliceblue",
     "named": false
   },
@@ -328,6 +336,10 @@
   },
   {
     "type": "align-vertical",
+    "named": false
+  },
+  {
+    "type": "ansi",
     "named": false
   },
   {
@@ -427,6 +439,10 @@
     "named": false
   },
   {
+    "type": "backslash",
+    "named": false
+  },
+  {
     "type": "beige",
     "named": false
   },
@@ -439,7 +455,15 @@
     "named": false
   },
   {
+    "type": "blanchedalmond",
+    "named": false
+  },
+  {
     "type": "blank",
+    "named": false
+  },
+  {
+    "type": "blink",
     "named": false
   },
   {
@@ -448,6 +472,14 @@
   },
   {
     "type": "blue",
+    "named": false
+  },
+  {
+    "type": "blueviolet",
+    "named": false
+  },
+  {
+    "type": "blur",
     "named": false
   },
   {
@@ -523,12 +555,44 @@
     "named": false
   },
   {
+    "type": "brown",
+    "named": false
+  },
+  {
+    "type": "burlywood",
+    "named": false
+  },
+  {
+    "type": "cadetblue",
+    "named": false
+  },
+  {
+    "type": "can-focus",
+    "named": false
+  },
+  {
+    "type": "cell",
+    "named": false
+  },
+  {
     "type": "center",
+    "named": false
+  },
+  {
+    "type": "chartreuse",
+    "named": false
+  },
+  {
+    "type": "chocolate",
     "named": false
   },
   {
     "type": "class_name",
     "named": true
+  },
+  {
+    "type": "clip",
+    "named": false
   },
   {
     "type": "color",
@@ -577,7 +641,139 @@
     "named": false
   },
   {
+    "type": "copy",
+    "named": false
+  },
+  {
+    "type": "coral",
+    "named": false
+  },
+  {
+    "type": "cornflowerblue",
+    "named": false
+  },
+  {
+    "type": "cornsilk",
+    "named": false
+  },
+  {
+    "type": "crimson",
+    "named": false
+  },
+  {
+    "type": "cross",
+    "named": false
+  },
+  {
+    "type": "crosshair",
+    "named": false
+  },
+  {
+    "type": "cyan",
+    "named": false
+  },
+  {
+    "type": "dark",
+    "named": false
+  },
+  {
+    "type": "darkblue",
+    "named": false
+  },
+  {
+    "type": "darkcyan",
+    "named": false
+  },
+  {
+    "type": "darkgoldenrod",
+    "named": false
+  },
+  {
+    "type": "darkgray",
+    "named": false
+  },
+  {
+    "type": "darkgreen",
+    "named": false
+  },
+  {
+    "type": "darkgrey",
+    "named": false
+  },
+  {
+    "type": "darkkhaki",
+    "named": false
+  },
+  {
+    "type": "darkmagenta",
+    "named": false
+  },
+  {
+    "type": "darkolivegreen",
+    "named": false
+  },
+  {
+    "type": "darkorange",
+    "named": false
+  },
+  {
+    "type": "darkorchid",
+    "named": false
+  },
+  {
+    "type": "darkred",
+    "named": false
+  },
+  {
+    "type": "darksalmon",
+    "named": false
+  },
+  {
+    "type": "darkseagreen",
+    "named": false
+  },
+  {
+    "type": "darkslateblue",
+    "named": false
+  },
+  {
+    "type": "darkslategray",
+    "named": false
+  },
+  {
+    "type": "darkslategrey",
+    "named": false
+  },
+  {
+    "type": "darkturquoise",
+    "named": false
+  },
+  {
+    "type": "darkviolet",
+    "named": false
+  },
+  {
     "type": "dashed",
+    "named": false
+  },
+  {
+    "type": "deeppink",
+    "named": false
+  },
+  {
+    "type": "deepskyblue",
+    "named": false
+  },
+  {
+    "type": "default",
+    "named": false
+  },
+  {
+    "type": "dimgray",
+    "named": false
+  },
+  {
+    "type": "dimgrey",
     "named": false
   },
   {
@@ -593,7 +789,19 @@
     "named": false
   },
   {
+    "type": "dodgerblue",
+    "named": false
+  },
+  {
     "type": "double",
+    "named": false
+  },
+  {
+    "type": "e-resize",
+    "named": false
+  },
+  {
+    "type": "ellipsis",
     "named": false
   },
   {
@@ -605,6 +813,30 @@
     "named": false
   },
   {
+    "type": "even",
+    "named": false
+  },
+  {
+    "type": "ew-resize",
+    "named": false
+  },
+  {
+    "type": "firebrick",
+    "named": false
+  },
+  {
+    "type": "first-child",
+    "named": false
+  },
+  {
+    "type": "first-of-type",
+    "named": false
+  },
+  {
+    "type": "floralwhite",
+    "named": false
+  },
+  {
     "type": "focus",
     "named": false
   },
@@ -613,7 +845,39 @@
     "named": false
   },
   {
+    "type": "fold",
+    "named": false
+  },
+  {
+    "type": "forestgreen",
+    "named": false
+  },
+  {
     "type": "fuchsia",
+    "named": false
+  },
+  {
+    "type": "gainsboro",
+    "named": false
+  },
+  {
+    "type": "ghostwhite",
+    "named": false
+  },
+  {
+    "type": "gold",
+    "named": false
+  },
+  {
+    "type": "goldenrod",
+    "named": false
+  },
+  {
+    "type": "grab",
+    "named": false
+  },
+  {
+    "type": "grabbing",
     "named": false
   },
   {
@@ -622,6 +886,14 @@
   },
   {
     "type": "green",
+    "named": false
+  },
+  {
+    "type": "greenyellow",
+    "named": false
+  },
+  {
+    "type": "grey",
     "named": false
   },
   {
@@ -645,11 +917,19 @@
     "named": false
   },
   {
+    "type": "hatch",
+    "named": false
+  },
+  {
     "type": "heavy",
     "named": false
   },
   {
     "type": "height",
+    "named": false
+  },
+  {
+    "type": "help",
     "named": false
   },
   {
@@ -661,7 +941,15 @@
     "named": false
   },
   {
+    "type": "honeydew",
+    "named": false
+  },
+  {
     "type": "horizontal",
+    "named": false
+  },
+  {
+    "type": "hotpink",
     "named": false
   },
   {
@@ -685,11 +973,23 @@
     "named": true
   },
   {
+    "type": "indianred",
+    "named": false
+  },
+  {
+    "type": "indigo",
+    "named": false
+  },
+  {
     "type": "inflect",
     "named": false
   },
   {
     "type": "initial",
+    "named": false
+  },
+  {
+    "type": "inline",
     "named": false
   },
   {
@@ -701,11 +1001,39 @@
     "named": false
   },
   {
+    "type": "ivory",
+    "named": false
+  },
+  {
     "type": "justify",
     "named": false
   },
   {
     "type": "keyline",
+    "named": false
+  },
+  {
+    "type": "khaki",
+    "named": false
+  },
+  {
+    "type": "last-child",
+    "named": false
+  },
+  {
+    "type": "last-of-type",
+    "named": false
+  },
+  {
+    "type": "lavender",
+    "named": false
+  },
+  {
+    "type": "lavenderblush",
+    "named": false
+  },
+  {
+    "type": "lawngreen",
     "named": false
   },
   {
@@ -725,7 +1053,83 @@
     "named": false
   },
   {
+    "type": "lemonchiffon",
+    "named": false
+  },
+  {
+    "type": "light",
+    "named": false
+  },
+  {
+    "type": "lightblue",
+    "named": false
+  },
+  {
+    "type": "lightcoral",
+    "named": false
+  },
+  {
+    "type": "lightcyan",
+    "named": false
+  },
+  {
+    "type": "lightgoldenrodyellow",
+    "named": false
+  },
+  {
+    "type": "lightgray",
+    "named": false
+  },
+  {
+    "type": "lightgreen",
+    "named": false
+  },
+  {
+    "type": "lightgrey",
+    "named": false
+  },
+  {
+    "type": "lightpink",
+    "named": false
+  },
+  {
+    "type": "lightsalmon",
+    "named": false
+  },
+  {
+    "type": "lightseagreen",
+    "named": false
+  },
+  {
+    "type": "lightskyblue",
+    "named": false
+  },
+  {
+    "type": "lightslategray",
+    "named": false
+  },
+  {
+    "type": "lightslategrey",
+    "named": false
+  },
+  {
+    "type": "lightsteelblue",
+    "named": false
+  },
+  {
+    "type": "lightyellow",
+    "named": false
+  },
+  {
     "type": "lime",
+    "named": false
+  },
+  {
+    "type": "limegreen",
+    "named": false
+  },
+  {
+    "type": "linen",
     "named": false
   },
   {
@@ -750,6 +1154,14 @@
   },
   {
     "type": "link-style-hover",
+    "named": false
+  },
+  {
+    "type": "links",
+    "named": false
+  },
+  {
+    "type": "magenta",
     "named": false
   },
   {
@@ -785,7 +1197,47 @@
     "named": false
   },
   {
+    "type": "mediumaquamarine",
+    "named": false
+  },
+  {
+    "type": "mediumblue",
+    "named": false
+  },
+  {
+    "type": "mediumorchid",
+    "named": false
+  },
+  {
+    "type": "mediumpurple",
+    "named": false
+  },
+  {
+    "type": "mediumseagreen",
+    "named": false
+  },
+  {
+    "type": "mediumslateblue",
+    "named": false
+  },
+  {
+    "type": "mediumspringgreen",
+    "named": false
+  },
+  {
+    "type": "mediumturquoise",
+    "named": false
+  },
+  {
+    "type": "mediumvioletred",
+    "named": false
+  },
+  {
     "type": "middle",
+    "named": false
+  },
+  {
+    "type": "midnightblue",
     "named": false
   },
   {
@@ -797,7 +1249,35 @@
     "named": false
   },
   {
+    "type": "mintcream",
+    "named": false
+  },
+  {
+    "type": "mistyrose",
+    "named": false
+  },
+  {
+    "type": "moccasin",
+    "named": false
+  },
+  {
+    "type": "move",
+    "named": false
+  },
+  {
+    "type": "n-resize",
+    "named": false
+  },
+  {
+    "type": "navajowhite",
+    "named": false
+  },
+  {
     "type": "navy",
+    "named": false
+  },
+  {
+    "type": "ne-resize",
     "named": false
   },
   {
@@ -805,12 +1285,44 @@
     "named": true
   },
   {
+    "type": "nesw-resize",
+    "named": false
+  },
+  {
+    "type": "no-drop",
+    "named": false
+  },
+  {
     "type": "none",
+    "named": false
+  },
+  {
+    "type": "not-allowed",
+    "named": false
+  },
+  {
+    "type": "nowrap",
+    "named": false
+  },
+  {
+    "type": "ns-resize",
     "named": false
   },
   {
     "type": "numeric_value",
     "named": true
+  },
+  {
+    "type": "nw-resize",
+    "named": false
+  },
+  {
+    "type": "nwse-resize",
+    "named": false
+  },
+  {
+    "type": "odd",
+    "named": false
   },
   {
     "type": "offset",
@@ -825,7 +1337,15 @@
     "named": false
   },
   {
+    "type": "oldlace",
+    "named": false
+  },
+  {
     "type": "olive",
+    "named": false
+  },
+  {
+    "type": "olivedrab",
     "named": false
   },
   {
@@ -834,6 +1354,14 @@
   },
   {
     "type": "orange",
+    "named": false
+  },
+  {
+    "type": "orangered",
+    "named": false
+  },
+  {
+    "type": "orchid",
     "named": false
   },
   {
@@ -897,7 +1425,39 @@
     "named": false
   },
   {
+    "type": "palegoldenrod",
+    "named": false
+  },
+  {
+    "type": "palegreen",
+    "named": false
+  },
+  {
+    "type": "paleturquoise",
+    "named": false
+  },
+  {
+    "type": "palevioletred",
+    "named": false
+  },
+  {
     "type": "panel",
+    "named": false
+  },
+  {
+    "type": "papayawhip",
+    "named": false
+  },
+  {
+    "type": "peachpuff",
+    "named": false
+  },
+  {
+    "type": "peru",
+    "named": false
+  },
+  {
+    "type": "pink",
     "named": false
   },
   {
@@ -905,11 +1465,35 @@
     "named": true
   },
   {
+    "type": "plum",
+    "named": false
+  },
+  {
+    "type": "pointer",
+    "named": false
+  },
+  {
+    "type": "position",
+    "named": false
+  },
+  {
+    "type": "powderblue",
+    "named": false
+  },
+  {
+    "type": "progress",
+    "named": false
+  },
+  {
     "type": "purple",
     "named": false
   },
   {
     "type": "red",
+    "named": false
+  },
+  {
+    "type": "relative",
     "named": false
   },
   {
@@ -929,11 +1513,35 @@
     "named": false
   },
   {
+    "type": "rosybrown",
+    "named": false
+  },
+  {
     "type": "round",
     "named": false
   },
   {
     "type": "row-span",
+    "named": false
+  },
+  {
+    "type": "royalblue",
+    "named": false
+  },
+  {
+    "type": "s-resize",
+    "named": false
+  },
+  {
+    "type": "saddlebrown",
+    "named": false
+  },
+  {
+    "type": "salmon",
+    "named": false
+  },
+  {
+    "type": "sandybrown",
     "named": false
   },
   {
@@ -989,11 +1597,59 @@
     "named": false
   },
   {
+    "type": "scrollbar-visibility",
+    "named": false
+  },
+  {
+    "type": "se-resize",
+    "named": false
+  },
+  {
+    "type": "seagreen",
+    "named": false
+  },
+  {
+    "type": "seashell",
+    "named": false
+  },
+  {
+    "type": "sienna",
+    "named": false
+  },
+  {
     "type": "silver",
     "named": false
   },
   {
+    "type": "skyblue",
+    "named": false
+  },
+  {
+    "type": "slash",
+    "named": false
+  },
+  {
+    "type": "slateblue",
+    "named": false
+  },
+  {
+    "type": "slategray",
+    "named": false
+  },
+  {
+    "type": "slategrey",
+    "named": false
+  },
+  {
+    "type": "snow",
+    "named": false
+  },
+  {
     "type": "solid",
+    "named": false
+  },
+  {
+    "type": "springgreen",
     "named": false
   },
   {
@@ -1005,7 +1661,15 @@
     "named": false
   },
   {
+    "type": "steelblue",
+    "named": false
+  },
+  {
     "type": "strike",
+    "named": false
+  },
+  {
+    "type": "sw-resize",
     "named": false
   },
   {
@@ -1013,7 +1677,15 @@
     "named": false
   },
   {
+    "type": "tan",
+    "named": false
+  },
+  {
     "type": "teal",
+    "named": false
+  },
+  {
+    "type": "text",
     "named": false
   },
   {
@@ -1025,7 +1697,15 @@
     "named": false
   },
   {
+    "type": "text-overflow",
+    "named": false
+  },
+  {
     "type": "text-style",
+    "named": false
+  },
+  {
+    "type": "text-wrap",
     "named": false
   },
   {
@@ -1033,7 +1713,15 @@
     "named": false
   },
   {
+    "type": "thistle",
+    "named": false
+  },
+  {
     "type": "tint",
+    "named": false
+  },
+  {
+    "type": "tomato",
     "named": false
   },
   {
@@ -1042,6 +1730,10 @@
   },
   {
     "type": "transparent",
+    "named": false
+  },
+  {
+    "type": "turquoise",
     "named": false
   },
   {
@@ -1057,6 +1749,14 @@
     "named": false
   },
   {
+    "type": "vertical-text",
+    "named": false
+  },
+  {
+    "type": "violet",
+    "named": false
+  },
+  {
     "type": "visibility",
     "named": false
   },
@@ -1069,7 +1769,23 @@
     "named": false
   },
   {
+    "type": "w-resize",
+    "named": false
+  },
+  {
+    "type": "wait",
+    "named": false
+  },
+  {
+    "type": "wheat",
+    "named": false
+  },
+  {
     "type": "white",
+    "named": false
+  },
+  {
+    "type": "whitesmoke",
     "named": false
   },
   {
@@ -1089,6 +1805,10 @@
     "named": true
   },
   {
+    "type": "wrap",
+    "named": false
+  },
+  {
     "type": "x",
     "named": false
   },
@@ -1098,6 +1818,18 @@
   },
   {
     "type": "yellow",
+    "named": false
+  },
+  {
+    "type": "yellowgreen",
+    "named": false
+  },
+  {
+    "type": "zoom-in",
+    "named": false
+  },
+  {
+    "type": "zoom-out",
     "named": false
   },
   {

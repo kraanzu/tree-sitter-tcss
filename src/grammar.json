@@ -200,11 +200,39 @@
           "members": [
             {
               "type": "STRING",
+              "value": "ansi"
+            },
+            {
+              "type": "STRING",
+              "value": "blur"
+            },
+            {
+              "type": "STRING",
+              "value": "can-focus"
+            },
+            {
+              "type": "STRING",
+              "value": "dark"
+            },
+            {
+              "type": "STRING",
               "value": "disabled"
             },
             {
               "type": "STRING",
               "value": "enabled"
+            },
+            {
+              "type": "STRING",
+              "value": "even"
+            },
+            {
+              "type": "STRING",
+              "value": "first-of-type"
+            },
+            {
+              "type": "STRING",
+              "value": "first-child"
             },
             {
               "type": "STRING",
@@ -217,6 +245,26 @@
             {
               "type": "STRING",
               "value": "hover"
+            },
+            {
+              "type": "STRING",
+              "value": "inline"
+            },
+            {
+              "type": "STRING",
+              "value": "last-of-type"
+            },
+            {
+              "type": "STRING",
+              "value": "last-child"
+            },
+            {
+              "type": "STRING",
+              "value": "light"
+            },
+            {
+              "type": "STRING",
+              "value": "odd"
             }
           ]
         }
@@ -421,6 +469,10 @@
         },
         {
           "type": "STRING",
+          "value": "grid"
+        },
+        {
+          "type": "STRING",
           "value": "grid-columns"
         },
         {
@@ -434,6 +486,10 @@
         {
           "type": "STRING",
           "value": "grid-size"
+        },
+        {
+          "type": "STRING",
+          "value": "hatch"
         },
         {
           "type": "STRING",
@@ -478,6 +534,10 @@
         {
           "type": "STRING",
           "value": "link-style-hover"
+        },
+        {
+          "type": "STRING",
+          "value": "links"
         },
         {
           "type": "STRING",
@@ -589,6 +649,14 @@
         },
         {
           "type": "STRING",
+          "value": "pointer"
+        },
+        {
+          "type": "STRING",
+          "value": "position"
+        },
+        {
+          "type": "STRING",
           "value": "row-span"
         },
         {
@@ -637,6 +705,10 @@
         },
         {
           "type": "STRING",
+          "value": "scrollbar-visibility"
+        },
+        {
+          "type": "STRING",
           "value": "text-align"
         },
         {
@@ -645,7 +717,15 @@
         },
         {
           "type": "STRING",
+          "value": "text-overflow"
+        },
+        {
+          "type": "STRING",
           "value": "text-style"
+        },
+        {
+          "type": "STRING",
+          "value": "text-wrap"
         },
         {
           "type": "STRING",
@@ -703,6 +783,14 @@
       "members": [
         {
           "type": "STRING",
+          "value": "absolute"
+        },
+        {
+          "type": "STRING",
+          "value": "alias"
+        },
+        {
+          "type": "STRING",
           "value": "ascii"
         },
         {
@@ -711,7 +799,15 @@
         },
         {
           "type": "STRING",
+          "value": "backslash"
+        },
+        {
+          "type": "STRING",
           "value": "blank"
+        },
+        {
+          "type": "STRING",
+          "value": "blink"
         },
         {
           "type": "STRING",
@@ -735,7 +831,15 @@
         },
         {
           "type": "STRING",
+          "value": "cell"
+        },
+        {
+          "type": "STRING",
           "value": "center"
+        },
+        {
+          "type": "STRING",
+          "value": "clip"
         },
         {
           "type": "STRING",
@@ -743,7 +847,27 @@
         },
         {
           "type": "STRING",
+          "value": "copy"
+        },
+        {
+          "type": "STRING",
+          "value": "cross"
+        },
+        {
+          "type": "STRING",
+          "value": "crosshair"
+        },
+        {
+          "type": "STRING",
           "value": "dashed"
+        },
+        {
+          "type": "STRING",
+          "value": "default"
+        },
+        {
+          "type": "STRING",
+          "value": "disabled"
         },
         {
           "type": "STRING",
@@ -751,7 +875,35 @@
         },
         {
           "type": "STRING",
+          "value": "e-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "ellipsis"
+        },
+        {
+          "type": "STRING",
+          "value": "enabled"
+        },
+        {
+          "type": "STRING",
           "value": "end"
+        },
+        {
+          "type": "STRING",
+          "value": "ew-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "fold"
+        },
+        {
+          "type": "STRING",
+          "value": "grab"
+        },
+        {
+          "type": "STRING",
+          "value": "grabbing"
         },
         {
           "type": "STRING",
@@ -760,6 +912,10 @@
         {
           "type": "STRING",
           "value": "heavy"
+        },
+        {
+          "type": "STRING",
+          "value": "help"
         },
         {
           "type": "STRING",
@@ -803,7 +959,47 @@
         },
         {
           "type": "STRING",
+          "value": "move"
+        },
+        {
+          "type": "STRING",
+          "value": "n-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "ne-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "nesw-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "no-drop"
+        },
+        {
+          "type": "STRING",
           "value": "none"
+        },
+        {
+          "type": "STRING",
+          "value": "not-allowed"
+        },
+        {
+          "type": "STRING",
+          "value": "nowrap"
+        },
+        {
+          "type": "STRING",
+          "value": "ns-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "nw-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "nwse-resize"
         },
         {
           "type": "STRING",
@@ -812,6 +1008,18 @@
         {
           "type": "STRING",
           "value": "panel"
+        },
+        {
+          "type": "STRING",
+          "value": "pointer"
+        },
+        {
+          "type": "STRING",
+          "value": "progress"
+        },
+        {
+          "type": "STRING",
+          "value": "relative"
         },
         {
           "type": "STRING",
@@ -827,11 +1035,23 @@
         },
         {
           "type": "STRING",
+          "value": "s-resize"
+        },
+        {
+          "type": "STRING",
           "value": "screen"
         },
         {
           "type": "STRING",
           "value": "scroll"
+        },
+        {
+          "type": "STRING",
+          "value": "se-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "slash"
         },
         {
           "type": "STRING",
@@ -851,7 +1071,15 @@
         },
         {
           "type": "STRING",
+          "value": "sw-resize"
+        },
+        {
+          "type": "STRING",
           "value": "tall"
+        },
+        {
+          "type": "STRING",
+          "value": "text"
         },
         {
           "type": "STRING",
@@ -863,11 +1091,19 @@
         },
         {
           "type": "STRING",
+          "value": "transparent"
+        },
+        {
+          "type": "STRING",
           "value": "underline"
         },
         {
           "type": "STRING",
           "value": "vertical"
+        },
+        {
+          "type": "STRING",
+          "value": "vertical-text"
         },
         {
           "type": "STRING",
@@ -879,7 +1115,19 @@
         },
         {
           "type": "STRING",
+          "value": "w-resize"
+        },
+        {
+          "type": "STRING",
+          "value": "wait"
+        },
+        {
+          "type": "STRING",
           "value": "wide"
+        },
+        {
+          "type": "STRING",
+          "value": "wrap"
         },
         {
           "type": "STRING",
@@ -888,12 +1136,24 @@
         {
           "type": "STRING",
           "value": "y"
+        },
+        {
+          "type": "STRING",
+          "value": "zoom-in"
+        },
+        {
+          "type": "STRING",
+          "value": "zoom-out"
         }
       ]
     },
     "color_keyword": {
       "type": "CHOICE",
       "members": [
+        {
+          "type": "STRING",
+          "value": "aliceblue"
+        },
         {
           "type": "STRING",
           "value": "ansi_black"
@@ -960,83 +1220,19 @@
         },
         {
           "type": "STRING",
-          "value": "aqua"
-        },
-        {
-          "type": "STRING",
-          "value": "black"
-        },
-        {
-          "type": "STRING",
-          "value": "blue"
-        },
-        {
-          "type": "STRING",
-          "value": "fuchsia"
-        },
-        {
-          "type": "STRING",
-          "value": "gray"
-        },
-        {
-          "type": "STRING",
-          "value": "green"
-        },
-        {
-          "type": "STRING",
-          "value": "lime"
-        },
-        {
-          "type": "STRING",
-          "value": "maroon"
-        },
-        {
-          "type": "STRING",
-          "value": "navy"
-        },
-        {
-          "type": "STRING",
-          "value": "olive"
-        },
-        {
-          "type": "STRING",
-          "value": "orange"
-        },
-        {
-          "type": "STRING",
-          "value": "purple"
-        },
-        {
-          "type": "STRING",
-          "value": "red"
-        },
-        {
-          "type": "STRING",
-          "value": "silver"
-        },
-        {
-          "type": "STRING",
-          "value": "teal"
-        },
-        {
-          "type": "STRING",
-          "value": "white"
-        },
-        {
-          "type": "STRING",
-          "value": "yellow"
-        },
-        {
-          "type": "STRING",
-          "value": "aliceblue"
-        },
-        {
-          "type": "STRING",
           "value": "antiquewhite"
         },
         {
           "type": "STRING",
+          "value": "aqua"
+        },
+        {
+          "type": "STRING",
           "value": "aquamarine"
+        },
+        {
+          "type": "STRING",
+          "value": "auto"
         },
         {
           "type": "STRING",
@@ -1052,11 +1248,567 @@
         },
         {
           "type": "STRING",
+          "value": "black"
+        },
+        {
+          "type": "STRING",
+          "value": "blanchedalmond"
+        },
+        {
+          "type": "STRING",
+          "value": "blue"
+        },
+        {
+          "type": "STRING",
+          "value": "blueviolet"
+        },
+        {
+          "type": "STRING",
+          "value": "brown"
+        },
+        {
+          "type": "STRING",
+          "value": "burlywood"
+        },
+        {
+          "type": "STRING",
+          "value": "cadetblue"
+        },
+        {
+          "type": "STRING",
+          "value": "chartreuse"
+        },
+        {
+          "type": "STRING",
+          "value": "chocolate"
+        },
+        {
+          "type": "STRING",
+          "value": "coral"
+        },
+        {
+          "type": "STRING",
+          "value": "cornflowerblue"
+        },
+        {
+          "type": "STRING",
+          "value": "cornsilk"
+        },
+        {
+          "type": "STRING",
+          "value": "crimson"
+        },
+        {
+          "type": "STRING",
+          "value": "cyan"
+        },
+        {
+          "type": "STRING",
+          "value": "darkblue"
+        },
+        {
+          "type": "STRING",
+          "value": "darkcyan"
+        },
+        {
+          "type": "STRING",
+          "value": "darkgoldenrod"
+        },
+        {
+          "type": "STRING",
+          "value": "darkgray"
+        },
+        {
+          "type": "STRING",
+          "value": "darkgreen"
+        },
+        {
+          "type": "STRING",
+          "value": "darkgrey"
+        },
+        {
+          "type": "STRING",
+          "value": "darkkhaki"
+        },
+        {
+          "type": "STRING",
+          "value": "darkmagenta"
+        },
+        {
+          "type": "STRING",
+          "value": "darkolivegreen"
+        },
+        {
+          "type": "STRING",
+          "value": "darkorange"
+        },
+        {
+          "type": "STRING",
+          "value": "darkorchid"
+        },
+        {
+          "type": "STRING",
+          "value": "darkred"
+        },
+        {
+          "type": "STRING",
+          "value": "darksalmon"
+        },
+        {
+          "type": "STRING",
+          "value": "darkseagreen"
+        },
+        {
+          "type": "STRING",
+          "value": "darkslateblue"
+        },
+        {
+          "type": "STRING",
+          "value": "darkslategray"
+        },
+        {
+          "type": "STRING",
+          "value": "darkslategrey"
+        },
+        {
+          "type": "STRING",
+          "value": "darkturquoise"
+        },
+        {
+          "type": "STRING",
+          "value": "darkviolet"
+        },
+        {
+          "type": "STRING",
+          "value": "deeppink"
+        },
+        {
+          "type": "STRING",
+          "value": "deepskyblue"
+        },
+        {
+          "type": "STRING",
+          "value": "dimgray"
+        },
+        {
+          "type": "STRING",
+          "value": "dimgrey"
+        },
+        {
+          "type": "STRING",
+          "value": "dodgerblue"
+        },
+        {
+          "type": "STRING",
+          "value": "firebrick"
+        },
+        {
+          "type": "STRING",
+          "value": "floralwhite"
+        },
+        {
+          "type": "STRING",
+          "value": "forestgreen"
+        },
+        {
+          "type": "STRING",
+          "value": "fuchsia"
+        },
+        {
+          "type": "STRING",
+          "value": "gainsboro"
+        },
+        {
+          "type": "STRING",
+          "value": "ghostwhite"
+        },
+        {
+          "type": "STRING",
+          "value": "gold"
+        },
+        {
+          "type": "STRING",
+          "value": "goldenrod"
+        },
+        {
+          "type": "STRING",
+          "value": "gray"
+        },
+        {
+          "type": "STRING",
+          "value": "green"
+        },
+        {
+          "type": "STRING",
+          "value": "greenyellow"
+        },
+        {
+          "type": "STRING",
+          "value": "grey"
+        },
+        {
+          "type": "STRING",
+          "value": "honeydew"
+        },
+        {
+          "type": "STRING",
+          "value": "hotpink"
+        },
+        {
+          "type": "STRING",
+          "value": "indianred"
+        },
+        {
+          "type": "STRING",
+          "value": "indigo"
+        },
+        {
+          "type": "STRING",
+          "value": "ivory"
+        },
+        {
+          "type": "STRING",
+          "value": "khaki"
+        },
+        {
+          "type": "STRING",
+          "value": "lavender"
+        },
+        {
+          "type": "STRING",
+          "value": "lavenderblush"
+        },
+        {
+          "type": "STRING",
+          "value": "lawngreen"
+        },
+        {
+          "type": "STRING",
+          "value": "lemonchiffon"
+        },
+        {
+          "type": "STRING",
+          "value": "lightblue"
+        },
+        {
+          "type": "STRING",
+          "value": "lightcoral"
+        },
+        {
+          "type": "STRING",
+          "value": "lightcyan"
+        },
+        {
+          "type": "STRING",
+          "value": "lightgoldenrodyellow"
+        },
+        {
+          "type": "STRING",
+          "value": "lightgray"
+        },
+        {
+          "type": "STRING",
+          "value": "lightgreen"
+        },
+        {
+          "type": "STRING",
+          "value": "lightgrey"
+        },
+        {
+          "type": "STRING",
+          "value": "lightpink"
+        },
+        {
+          "type": "STRING",
+          "value": "lightsalmon"
+        },
+        {
+          "type": "STRING",
+          "value": "lightseagreen"
+        },
+        {
+          "type": "STRING",
+          "value": "lightskyblue"
+        },
+        {
+          "type": "STRING",
+          "value": "lightslategray"
+        },
+        {
+          "type": "STRING",
+          "value": "lightslategrey"
+        },
+        {
+          "type": "STRING",
+          "value": "lightsteelblue"
+        },
+        {
+          "type": "STRING",
+          "value": "lightyellow"
+        },
+        {
+          "type": "STRING",
+          "value": "lime"
+        },
+        {
+          "type": "STRING",
+          "value": "limegreen"
+        },
+        {
+          "type": "STRING",
+          "value": "linen"
+        },
+        {
+          "type": "STRING",
+          "value": "magenta"
+        },
+        {
+          "type": "STRING",
+          "value": "maroon"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumaquamarine"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumblue"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumorchid"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumpurple"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumseagreen"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumslateblue"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumspringgreen"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumturquoise"
+        },
+        {
+          "type": "STRING",
+          "value": "mediumvioletred"
+        },
+        {
+          "type": "STRING",
+          "value": "midnightblue"
+        },
+        {
+          "type": "STRING",
+          "value": "mintcream"
+        },
+        {
+          "type": "STRING",
+          "value": "mistyrose"
+        },
+        {
+          "type": "STRING",
+          "value": "moccasin"
+        },
+        {
+          "type": "STRING",
+          "value": "navy"
+        },
+        {
+          "type": "STRING",
+          "value": "navajowhite"
+        },
+        {
+          "type": "STRING",
+          "value": "oldlace"
+        },
+        {
+          "type": "STRING",
+          "value": "olive"
+        },
+        {
+          "type": "STRING",
+          "value": "olivedrab"
+        },
+        {
+          "type": "STRING",
+          "value": "orange"
+        },
+        {
+          "type": "STRING",
+          "value": "orangered"
+        },
+        {
+          "type": "STRING",
+          "value": "orchid"
+        },
+        {
+          "type": "STRING",
+          "value": "palegoldenrod"
+        },
+        {
+          "type": "STRING",
+          "value": "palegreen"
+        },
+        {
+          "type": "STRING",
+          "value": "paleturquoise"
+        },
+        {
+          "type": "STRING",
+          "value": "palevioletred"
+        },
+        {
+          "type": "STRING",
+          "value": "papayawhip"
+        },
+        {
+          "type": "STRING",
+          "value": "peachpuff"
+        },
+        {
+          "type": "STRING",
+          "value": "peru"
+        },
+        {
+          "type": "STRING",
+          "value": "pink"
+        },
+        {
+          "type": "STRING",
+          "value": "plum"
+        },
+        {
+          "type": "STRING",
+          "value": "powderblue"
+        },
+        {
+          "type": "STRING",
+          "value": "purple"
+        },
+        {
+          "type": "STRING",
+          "value": "red"
+        },
+        {
+          "type": "STRING",
+          "value": "rosybrown"
+        },
+        {
+          "type": "STRING",
+          "value": "royalblue"
+        },
+        {
+          "type": "STRING",
+          "value": "saddlebrown"
+        },
+        {
+          "type": "STRING",
+          "value": "salmon"
+        },
+        {
+          "type": "STRING",
+          "value": "sandybrown"
+        },
+        {
+          "type": "STRING",
+          "value": "seagreen"
+        },
+        {
+          "type": "STRING",
+          "value": "seashell"
+        },
+        {
+          "type": "STRING",
+          "value": "sienna"
+        },
+        {
+          "type": "STRING",
+          "value": "silver"
+        },
+        {
+          "type": "STRING",
+          "value": "skyblue"
+        },
+        {
+          "type": "STRING",
+          "value": "slateblue"
+        },
+        {
+          "type": "STRING",
+          "value": "slategray"
+        },
+        {
+          "type": "STRING",
+          "value": "slategrey"
+        },
+        {
+          "type": "STRING",
+          "value": "snow"
+        },
+        {
+          "type": "STRING",
+          "value": "springgreen"
+        },
+        {
+          "type": "STRING",
+          "value": "steelblue"
+        },
+        {
+          "type": "STRING",
+          "value": "tan"
+        },
+        {
+          "type": "STRING",
+          "value": "teal"
+        },
+        {
+          "type": "STRING",
+          "value": "thistle"
+        },
+        {
+          "type": "STRING",
+          "value": "tomato"
+        },
+        {
+          "type": "STRING",
           "value": "transparent"
         },
         {
           "type": "STRING",
-          "value": "auto"
+          "value": "turquoise"
+        },
+        {
+          "type": "STRING",
+          "value": "violet"
+        },
+        {
+          "type": "STRING",
+          "value": "wheat"
+        },
+        {
+          "type": "STRING",
+          "value": "white"
+        },
+        {
+          "type": "STRING",
+          "value": "whitesmoke"
+        },
+        {
+          "type": "STRING",
+          "value": "yellow"
+        },
+        {
+          "type": "STRING",
+          "value": "yellowgreen"
         }
       ]
     },
