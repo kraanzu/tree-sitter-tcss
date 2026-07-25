@@ -1,0 +1,139 @@
+================================================================================
+Unknown property parses cleanly (not ERROR)
+================================================================================
+
+Button {
+  colr: red;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (keyword)))))
+
+================================================================================
+Unknown value parses cleanly (not ERROR)
+================================================================================
+
+Button {
+  dock: sideways;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (keyword)))))
+
+================================================================================
+Custom widget (uppercase) parses as widget_selector
+================================================================================
+
+MyCustomWidget {
+  color: red;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (keyword)))))
+
+================================================================================
+Nested rule vs declaration: uppercase = nested rule, lowercase = declaration
+================================================================================
+
+Screen {
+  padding: 1;
+  Button {
+    color: red;
+  }
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (numeric_value))
+      (rule_set
+        (selectors
+          (selector
+            (widget_selector)))
+        (block
+          (declaration
+            (property_name)
+            (keyword)))))))
+
+================================================================================
+Hash disambiguation: hex value vs id selector
+================================================================================
+
+#fff {
+  color: #fff;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (id_selector
+          (id_name))))
+    (block
+      (declaration
+        (property_name)
+        (color_value)))))
+
+================================================================================
+Function call vs bare keyword (rgb( ) is a call, red is a keyword)
+================================================================================
+
+Button {
+  color: red;
+  background: rgb(255, 0, 0);
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (selector
+        (widget_selector)))
+    (block
+      (declaration
+        (property_name)
+        (keyword))
+      (declaration
+        (property_name)
+        (function_call
+          (keyword)
+          (numeric_value)
+          (numeric_value)
+          (numeric_value))))))
