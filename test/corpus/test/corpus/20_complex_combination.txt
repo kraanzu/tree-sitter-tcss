@@ -39,17 +39,19 @@ Button:hover, Input:focus {
     (selectors
       (selector
         (widget_selector)
-        (pseudo_class_selector))
+        (pseudo_class_selector
+          (pseudo_class_name)))
       (selector
         (widget_selector)
-        (pseudo_class_selector)))
+        (pseudo_class_selector
+          (pseudo_class_name))))
     (block
       (declaration
         (property_name)
-        (property_keyword)
+        (keyword)
         (numeric_value)
-        (color_keyword))
+        (keyword))
       (declaration
         (property_name)
-        (color_keyword)
+        (keyword)
         (important)))))

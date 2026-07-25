@@ -18,10 +18,10 @@ Layout {
     (block
       (declaration
         (property_name)
-        (property_keyword))
+        (keyword))
       (declaration
         (property_name)
-        (property_keyword))
+        (keyword))
       (declaration
         (property_name)
-        (property_keyword)))))
+        (keyword)))))

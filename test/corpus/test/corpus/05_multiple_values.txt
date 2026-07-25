@@ -17,8 +17,8 @@ Box {
     (block
       (declaration
         (property_name)
-        (property_keyword)
-        (color_keyword))
+        (keyword)
+        (keyword))
       (declaration
         (property_name)
         (numeric_value)

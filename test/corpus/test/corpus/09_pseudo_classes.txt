@@ -17,18 +17,20 @@ Input:focus {
     (selectors
       (selector
         (widget_selector)
-        (pseudo_class_selector)))
+        (pseudo_class_selector
+          (pseudo_class_name))))
     (block
       (declaration
         (property_name)
-        (color_keyword))))
+        (keyword))))
   (rule_set
     (selectors
       (selector
         (widget_selector)
-        (pseudo_class_selector)))
+        (pseudo_class_selector
+          (pseudo_class_name))))
     (block
       (declaration
         (property_name)
-        (property_keyword)
-        (color_keyword)))))
+        (keyword)
+        (keyword)))))

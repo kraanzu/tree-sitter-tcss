@@ -21,7 +21,7 @@ Class selectors
     (block
       (declaration
         (property_name)
-        (color_keyword))))
+        (keyword))))
   (rule_set
     (selectors
       (selector
@@ -30,4 +30,4 @@ Class selectors
     (block
       (declaration
         (property_name)
-        (color_keyword)))))
+        (keyword)))))

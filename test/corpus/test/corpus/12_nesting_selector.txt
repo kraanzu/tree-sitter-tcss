@@ -20,13 +20,14 @@ Button {
     (block
       (declaration
         (property_name)
-        (color_keyword))
+        (keyword))
       (rule_set
         (selectors
           (selector
             (nesting_selector)
-            (pseudo_class_selector)))
+            (pseudo_class_selector
+              (pseudo_class_name))))
         (block
           (declaration
             (property_name)
-            (color_keyword)))))))
+            (keyword)))))))

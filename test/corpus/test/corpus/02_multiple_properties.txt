@@ -17,7 +17,7 @@ Screen {
     (block
       (declaration
         (property_name)
-        (color_keyword))
+        (keyword))
       (declaration
         (property_name)
-        (color_keyword)))))
+        (keyword)))))

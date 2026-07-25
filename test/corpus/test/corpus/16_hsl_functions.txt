@@ -17,6 +17,7 @@ Panel {
       (declaration
         (property_name)
         (function_call
+          (keyword)
           (numeric_value)
           (numeric_value)
           (numeric_value))))))
