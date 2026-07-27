@@ -4,6 +4,7 @@ Variable definition and usage
 
 $primary: #ff0000;
 $spacing: 10;
+$border: solid red;
 
 Button {
     background: $primary;
@@ -19,6 +20,10 @@ Button {
   (variable_definition
     (variable)
     (numeric_value))
+  (variable_definition
+    (variable)
+    (keyword)
+    (keyword))
   (rule_set
     (selectors
       (selector

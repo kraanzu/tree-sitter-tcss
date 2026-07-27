@@ -89,6 +89,7 @@ module.exports = grammar({
     // Any bareword value: keywords (`top`, `solid`) and color names (`red`).
     keyword: ($) => /[a-zA-Z][a-zA-Z0-9_-]*/,
 
-    variable_definition: ($) => seq($.variable, ":", $._value, ";"),
+    variable_definition: ($) =>
+      seq($.variable, ":", repeat1($._value), ";"),
   },
 });
